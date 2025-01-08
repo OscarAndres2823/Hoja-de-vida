@@ -1,0 +1,120 @@
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #f0f2f5;
+   margin: 0;
+   padding: 0;
+   color: #333;
+}
+
+.container {
+   width: 80%;
+   margin: 30px auto;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   padding: 40px;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+
+.profile-pic {
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 4px solid #4A90E2;
+}
+
+.contact-info {
+   text-align: right;
+   max-width: 400px;
+}
+
+.contact-info h1 {
+   margin: 0;
+   color: #4A90E2;
+}
+
+.contact-info p {
+   margin: 5px 0;
+   font-size: 1.1em;
+   color: #555;
+}
+
+.section {
+   margin-bottom: 30px;
+}
+
+.section h2 {
+   font-size: 1.5em;
+   color: #2D3E50;
+   border-bottom: 2px solid #4A90E2;
+   padding-bottom: 5px;
+   margin-bottom: 15px;
+}
+
+.section ul {
+   list-style: none;
+   padding: 0;
+}
+
+.section ul li {
+   position: relative;
+   padding-left: 20px;
+   font-size: 1.1em;
+   line-height: 1.6;
+   margin-bottom: 10px;
+}
+
+.section ul li::before {
+   content: "•";
+   position: absolute;
+   left: 0;
+   color: #4A90E2;
+   font-size: 1.5em;
+   top: 0;
+}
+
+.skills, .experience, .education {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
+}
+
+.skills li, .experience li, .education li {
+   background-color: #f8f8f8;
+   border-radius: 8px;
+   padding: 20px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease;
+}
+
+.skills li:hover, .experience li:hover, .education li:hover {
+   transform: translateY(-5px);
+   background-color: #e6f7ff;
+}
+
+.footer {
+   text-align: center;
+   margin-top: 40px;
+   font-size: 0.9em;
+   color: #777;
+}
+
+@media (max-width: 768px) {
+   .container {
+     width: 90%;
+     padding: 20px;
+   }
+   .contact-info {
+     text-align: left;
+   }
+   .skills, .experience, .education {
+     grid-template-columns: 1fr;
+   }
+}
